@@ -1,0 +1,32 @@
+name: Zgłoszenie błędu
+description: Zgłoś błąd w projekcie lub w teście.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Opis błędu
+      description: Opisz, co się stało i czego oczekiwałeś.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Kroki do odtworzenia
+      description: Podaj kroki pozwalające odtworzyć problem.
+      placeholder: |
+        1. Uruchom ...
+        2. Otwórz ...
+        3. Zobacz błąd
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logi lub zrzut ekranu
+      description: Wklej istotny komunikat błędu lub dołącz zrzut ekranu.
+      render: text
+    validations:
+      required: false

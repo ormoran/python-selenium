@@ -1,0 +1,27 @@
+name: Propozycja funkcji
+description: Zaproponuj ulepszenie projektu.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem do rozwiązania
+      description: Opisz potrzebę lub problem, który ma rozwiązać ta zmiana.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proponowane rozwiązanie
+      description: Opisz, jak według Ciebie mogłoby działać to ulepszenie.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Rozważane alternatywy
+      description: Opisz inne rozwiązania, jeśli były brane pod uwagę.
+    validations:
+      required: false
